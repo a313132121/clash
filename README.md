@@ -163,7 +163,7 @@ proxy-groups:
       - 💟 电信停机
       - 💘 电信定向
       - ⚖️ 负载均衡-轮询
-  - name: 🛑 广告拦截
+  - name: 🛑 全球拦截
     type: select
     proxies:
       - REJECT
