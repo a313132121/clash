@@ -5,15 +5,29 @@ mode: Rule
 log-level: info
 external-controller: :9090
 dns:
-  enabled: true
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:1053
+  enhanced-mode: redir-host       # redir-host or fake-ip
+  # fake-ip-range: 198.18.0.1/16    # Fake IP addresses pool CIDR
+  use-hosts: true                 # lookup hosts and return IP record
   nameserver:
-    - 119.29.29.29
-    - 223.5.5.5
+    - 119.29.29.29      # DNSpod DNS 17ms
+    - 223.5.5.5         # 阿里 19ms
+  # 提供 fallback 时，如果GEOIP非 CN 中国时使用 fallback 解析
   fallback:
-    - 8.8.8.8
-    - 8.8.4.4
-    - tls://1.0.0.1:853
-    - tls://dns.google:853
+    - tls://8.8.8.8:853         # Google DNS over TLS 50ms
+    - tls://8.8.4.4:853         # cloudflare DNS over TLS 50ms
+    - https://1.1.1.1/dns-query # cloudflare DNS over HTTPS
+    - https://dns.google/dns-query # Google DNS over HTTPS
+
+  # 强制DNS解析使用`fallback`配置
+  fallback-filter:
+    # true: CN使用nameserver解析，非CN使用fallback
+    geoip: true
+    # geoip设置为false时有效： 不匹配`ipcidr`地址时会使用`nameserver`结果，匹配`ipcidr`地址时使用`fallback`结果。
+    ipcidr:
+      - 240.0.0.0/4
 proxies:
   - {name: 🇸🇬 新加坡03, server: azsg3-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
   - {name: 🇭🇰 香港02, server: azhk2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
