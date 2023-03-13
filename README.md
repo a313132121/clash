@@ -207,7 +207,7 @@ proxy-groups:
     proxies:
       - ⚖️ 负载均衡-轮询
       - 🎯 全球直连
-  - name: 🛑 广告拦截
+  - name: 🛑 全球拦截
     type: select
     proxies:
       - REJECT
