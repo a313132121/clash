@@ -29,137 +29,86 @@ dns:
     ipcidr:
       - 240.0.0.0/4
 proxies:
-  - {name: 🇸🇬 新加坡03, server: azsg3-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇭🇰 香港02, server: azhk2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇯🇵 日本03, server: azjp3-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇯🇵 日本01, server: azjp1-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇰🇷 韩国01, server: azkr1-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇭🇰 香港01|专线, server: azhk1-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇭🇰 香港|免流, server: hkt1-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
-  - {name: 🇭🇰 香港|免流|02, server: hkt2-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇭🇰 香港|免流|03, server: hkt3.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
-  - {name: 🇭🇰 香港临时|中转|x10, server: szct.xn--dlq110j6ul.cc, port: 23386, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02|优化, server: udhk2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: tls.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01, server: azsg1-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡2, server: azsg2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇰🇷 韩国02|专线, server: azkr2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇯🇵 日本02, server: azjp2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
-  - {name: 🇭🇰 香港HKT|200M|02, server: hkt200m-2.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港HKT|200M, server: hkt200m.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港|免流|04, server: 223.16.93.223, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /1/action-impressions/1/OE/aws-mktg/action/awsm_v2comp_video_VideoPlayerReady, headers: {Host: fls-na.amazon.com}}}
-  - {name: 🇭🇰 香港01|解锁, server: awshk1-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港02|解锁, server: awshk2-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港03|解锁, server: awshk3-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港04|解锁, server: awshk4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港05|解锁, server: awshk5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港06|解锁, server: awshk6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港07|解锁, server: awshk7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港08|解锁, server: awshk8-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港09|解锁, server: awshk9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港10|解锁, server: awshk10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港11|解锁, server: awshk11-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港12|解锁, server: awshk12-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港13|高速, server: awshk13-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港14|高速, server: awshk14-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港15|高速, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇭🇰 香港16|高速, server: awshk16-data.amazon-azure.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazon-azure.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡01|解锁, server: awssg1-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡02|解锁, server: awssg2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡03|解锁, server: awssg3-data.amazon-azure.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
-  - {name: 🇸🇬 新加坡04|解锁, server: awssg4-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡05|解锁, server: awssg5-tg-data.amazonwebservicess.com, port: 10304, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡06|解锁, server: awssg6-tg-data.amazonwebservicess.com, port: 10311, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡08|高速, server: szct.xn--dlq110j6ul.cc, port: 25227, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡07|解锁, server: awssg7-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡08|解锁, server: awssg8-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡09|解锁, server: awssg9-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
-  - {name: 🇸🇬 新加坡10|解锁, server: awssg10-data.amazon-azure.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
-  - {name: 🇸🇬 新加坡11|免流, server: awssg11-data.amazon-azure.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
-  - {name: 🇸🇬 新加坡12|解锁, server: awssg12-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡13|解锁, server: awssg13-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇸🇬 新加坡14|解锁, server: awssg14-data.amazon-azure.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
-  - {name: 🇯🇵 日本02|解锁, server: awsjp2-data.amazon-azure.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
-  - {name: 🇯🇵 日本03|解锁, server: awsjp3-data.amazon-azure.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
-  - {name: 🇯🇵 日本04|解锁, server: awsjp4-data.amazon-azure.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇯🇵 日本05|解锁, server: awsjp5-data.amazon-azure.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
-  - {name: 🇯🇵 日本06|解锁, server: awsjp6-data.amazon-azure.com, port: 10307, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
-  - {name: 🇯🇵 日本07|解锁, server: awsjp7-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇯🇵 日本08|解锁, server: awsjp8-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇯🇵 日本09|解锁, server: awsjp9-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇯🇵 日本10|解锁, server: awsjp10-tg-data.amazonwebservicess.com, port: 10303, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇯🇵 日本11|高速, server: awsjp11-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇰🇷 韩国01|高速, server: awskr1-tg-data.amazonwebservicess.com, port: 10307, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇰🇷 韩国02|高速, server: awskr2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
-  - {name: 🇨🇳 台湾01, server: scloudtw1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾02, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾03, server: stw3-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾04, server: stw4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾05, server: stw5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾06, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾07, server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾08, server: stw8-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾09, server: stw9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇨🇳 台湾10, server: stw10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇺🇸 美国02|高速|流媒体|x10, server: szct.xn--dlq110j6ul.cc, port: 28994, type: trojan, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, sni: data.amazonwebservicess.com, skip-cert-verify: false}
-  - {name: 🇦🇺 澳大利亚01|高速, server: szct.xn--dlq110j6ul.cc, port: 27088, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
-  - {name: 🇬🇧 英国02, server: cfgb2.baf1.sbs, port: 443, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cfgb2.baf1.sbs, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: cfgb2.baf1.sbs}}}
-  - {name: 🇸🇬 新加坡中转|x10, server: jscm.xn--dlq110j6ul.cc, port: 25168, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇭🇰 深港|新加坡|x10, server: jscm.xn--dlq110j6ul.cc, port: 58390, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇯🇵 日本中转|x10, server: szct.xn--dlq110j6ul.cc, port: 47600, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇯🇵 日本中转02|x10, server: jscm.xn--dlq110j6ul.cc, port: 57499, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇯🇵 日本04|中转|高速x10, server: jscm.xn--dlq110j6ul.cc, port: 14084, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇯🇵 日本05|中转|高速x10, server: jmcm.xn--dlq110j6ul.cc, port: 30441, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇺🇸 美国03|x10, server: szct.xn--dlq110j6ul.cc, port: 45850, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇺🇸 美国06|x10, server: hbcu.xn--dlq110j6ul.cc, port: 28543, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇬🇧 英国01|x10, server: jscm.xn--dlq110j6ul.cc, port: 54694, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇮🇳 印度02|x10, server: hbcu.xn--dlq110j6ul.cc, port: 14983, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇦🇷 阿根廷01|原生|x10, server: zhuhai.cfcloud.life, port: 19399, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇱🇺 卢森堡01|原生|x10, server: zhuhai.cfcloud.life, port: 17385, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 乌克兰01|原生|x10, server: jscm.xn--dlq110j6ul.cc, port: 49886, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇹🇷 土耳其01|原生|x10, server: jscm.xn--dlq110j6ul.cc, port: 10045, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇹🇷 土耳其02|原生|x10, server: jscm.xn--dlq110j6ul.cc, port: 15673, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇩🇪 德国01|x10, server: jscm.xn--dlq110j6ul.cc, port: 37111, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇹🇭 泰国01|x10, server: hbcu.xn--dlq110j6ul.cc, port: 16199, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇹🇭 泰国02|x10, server: jscm.xn--dlq110j6ul.cc, port: 10225, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇻🇳 越南01|x10, server: jscm.xn--dlq110j6ul.cc, port: 35259, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇻🇳 越南02|x10, server: hbcu.xn--dlq110j6ul.cc, port: 59562, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇫🇷 法国01|x10, server: zhuhai.cfcloud.life, port: 41831, type: ss, cipher: chacha20-ietf-poly1305, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇨🇦 加拿大01|x10, server: szct.xn--dlq110j6ul.cc, port: 27581, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇫🇮 芬兰|x10, server: szct.xn--dlq110j6ul.cc, port: 17037, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇰🇿 哈萨克斯坦01|x10, server: szct.xn--dlq110j6ul.cc, port: 53377, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇱🇹 立陶宛01|x10, server: szct.xn--dlq110j6ul.cc, port: 34525, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇮🇱 以色列01|x10, server: zhuhai.cfcloud.life, port: 53687, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇭🇺 匈牙利01|x10, server: jmcm.xn--dlq110j6ul.cc, port: 16368, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇲🇽 墨西哥01|x10, server: hbcu.xn--dlq110j6ul.cc, port: 13995, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇪🇸 西班牙01|x10, server: hbcu.xn--dlq110j6ul.cc, port: 23457, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇵🇱 波兰01|x10, server: szct.xn--dlq110j6ul.cc, port: 57405, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇸🇪 瑞典01|x10, server: szct.xn--dlq110j6ul.cc, port: 18832, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇵🇭 菲律宾01|x10, server: szct.xn--dlq110j6ul.cc, port: 59856, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇵🇹 葡萄牙01|x10, server: szct.xn--dlq110j6ul.cc, port: 59870, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇷🇴 罗马尼亚01|x10, server: szct.xn--dlq110j6ul.cc, port: 11147, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇬🇷 希腊01|x10, server: szct.xn--dlq110j6ul.cc, port: 26524, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇦🇹 奥地利01|x10, server: szct.xn--dlq110j6ul.cc, port: 40032, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇰🇭 柬埔寨01|x10, server: szct.xn--dlq110j6ul.cc, port: 46546, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇵🇰 巴基斯坦01|x10, server: szct.xn--dlq110j6ul.cc, port: 26319, type: ss, cipher: aes-128-gcm, password: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9}
-  - {name: 🇳🇱 荷兰01, server: nl1.baf1.sbs, port: 443, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: nl1.baf1.sbs, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: nl1.baf1.sbs}}}
-  - {name: 🇨🇳 中国电信星卡, server: 101.37.24.63, port: 80, type: vmess, uuid: 931be4b3-9c0b-41b2-ffe5-14ca0f9c15e0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: t7z.cupid.iqiyi.com}}}
-  - {name: 🇨🇳 中国电信停机, server: 101.37.24.63, port: 443, type: vmess, uuid: b8a6e475-a418-466d-9ae0-bf40f8358b70, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
-  - {name: 🇭🇰 香港电信星卡, server: hkt1-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: t7z.cupid.iqiyi.com}}}
-  - {name: 🇭🇰 香港电信星卡02, server: hkt2-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: t7z.cupid.iqiyi.com}}}
-  - {name: 🇭🇰 香港电信星卡03, server: hkt3.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
-  - {name: 🇭🇰 香港电信星卡04, server: 223.16.93.223, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /1/action-impressions/1/OE/aws-mktg/action/awsm_v2comp_video_VideoPlayerReady, headers: {Host: t7z.cupid.iqiyi.com}}}
-  - {name: 🇸🇬 新加坡电信星卡, server: awssg11-data.amazon-azure.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: t7z.cupid.iqiyi.com}}}
-  - {name: 🇭🇰 香港电信停机, server: hkt1-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: wapsd.189.cn}}}
-  - {name: 🇭🇰 香港电信停机02, server: hkt2-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: wapsd.189.cn}}}
-  - {name: 🇭🇰 香港电信停机03, server: hkt3.amazonwebservicess.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: wapsd.189.cn}}}
-  - {name: 🇭🇰 香港电信停机04, server: 223.16.93.223, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /1/action-impressions/1/OE/aws-mktg/action/awsm_v2comp_video_VideoPlayerReady, headers: {Host: wapsd.189.cn}}}
-  - {name: 🇸🇬 新加坡电信停机, server: awssg11-data.amazon-azure.com, port: 80, type: vmess, uuid: 6f98b32d-1e36-4be5-8c30-edb0ae1220a9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: wapsd.189.cn}}}
+  - {name: 🇯🇵 日本03|专线, server: azjp3-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇯🇵 日本01|专线, server: azjp1-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇰🇷 韩国01|专线, server: azkr1-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡03|专线, server: azsg3-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇭🇰 香港02|专线, server: azhk2-tg-data.amazonwebservicess.com, port: 10312, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇭🇰 香港01|专线, server: azhk1-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇭🇰 香港|免流|01, server: hkt1-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
+  - {name: 🇭🇰 香港|免流|02, server: hkt2-tg-data.amazonwebservicess.com, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: 🇭🇰 香港|免流|03, server: hkt3.amazonwebservicess.com, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
+  - {name: 🇭🇰 香港02|优化, server: udhk2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: tls.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡01|专线, server: azsg1-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡2|专线, server: azsg2-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇰🇷 韩国02|专线, server: azkr2-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇯🇵 日本02|专线, server: azjp2-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: tls.amazonwebservicess.com}
+  - {name: 🇭🇰 香港HKT|200M|02, server: hkt200m-2.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港HKT|200M, server: hkt200m.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港|免流|临时, server: 223.16.93.223, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /1/action-impressions/1/OE/aws-mktg/action/awsm_v2comp_video_VideoPlayerReady, headers: {Host: fls-na.amazon.com}}}
+  - {name: 🇭🇰 香港01|解锁, server: awshk1-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港02|解锁, server: awshk2-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港03|解锁, server: awshk3-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港04|解锁, server: awshk4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港05|解锁, server: awshk5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港06|解锁, server: awshk6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港07|解锁, server: awshk7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港08|解锁, server: awshk8-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港09|解锁, server: awshk9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港10|解锁, server: awshk10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港11|解锁, server: awshk11-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港12|解锁, server: awshk12-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港13|高速, server: awshk13-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港14|高速, server: awshk14-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港15|高速, server: awshk15-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇭🇰 香港16|高速, server: awshk16-data.amazon-azure.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazon-azure.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡01|解锁, server: awssg1-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡02|解锁, server: awssg2-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡03|解锁, server: awssg3-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇸🇬 新加坡04|解锁, server: awssg4-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡05|解锁, server: awssg5-tg-data.amazonwebservicess.com, port: 10304, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡06|解锁, server: awssg6-tg-data.amazonwebservicess.com, port: 10311, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡08|高速, server: szct.xn--dlq110j6ul.cc, port: 25227, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇸🇬 新加坡07|解锁, server: awssg7-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡08|解锁, server: awssg8-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡09|解锁, server: awssg9-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡10|解锁, server: awssg10-data.amazon-azure.com, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
+  - {name: 🇸🇬 新加坡11|免流, server: awssg11-data.amazon-azure.com, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
+  - {name: 🇸🇬 新加坡12|解锁, server: awssg12-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡13|解锁, server: awssg13-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇸🇬 新加坡14|解锁, server: awssg14-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本01|高速, server: awsjp1-data.amazon-azure.com, port: 10311, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本02|解锁, server: awsjp2-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本03|解锁, server: awsjp3-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本04|解锁, server: awsjp4-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本05|解锁, server: awsjp5-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本06|解锁, server: awsjp6-data.amazon-azure.com, port: 10307, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇯🇵 日本07|解锁, server: awsjp7-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇯🇵 日本08|解锁, server: awsjp8-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇯🇵 日本09|解锁, server: awsjp9-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇯🇵 日本10|解锁, server: awsjp10-tg-data.amazonwebservicess.com, port: 10303, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇯🇵 日本11|高速, server: awsjp11-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇯🇵 日本12|免流, server: awsjp12-data.amazon-azure.com, port: 80, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /aws-china-media/Y699Gjx2rNw.mp4, headers: {Host: media.amazonwebservices.com}}}
+  - {name: 🇰🇷 韩国01|高速, server: awskr1-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇰🇷 韩国02|高速, server: awskr2-tg-data.amazonwebservicess.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazonwebservicess.com}
+  - {name: 🇨🇳 台湾01, server: scloudtw1-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾02, server: scloudtw2-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾03, server: stw3-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾04, server: stw4-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾05, server: stw5-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾06, server: stw6-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾07, server: stw7-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾08, server: stw8-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾09, server: stw9-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇨🇳 台湾10, server: stw10-tg-data.amazonwebservicess.com, port: 443, type: trojan, password: bef16390-f84c-4eb1-9ac1-295726b373ee, sni: data.amazonwebservicess.com, skip-cert-verify: false}
+  - {name: 🇺🇸 美国01|高速, server: awsus1-tg-data.amazon-azure.com, port: 10303, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
+  - {name: 🇦🇺 澳大利亚01|高速, server: szct.xn--dlq110j6ul.cc, port: 27088, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: 🇬🇧 英国02, server: cfgb2.baf1.sbs, port: 443, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: cfgb2.baf1.sbs, network: ws, ws-opts: {path: /filestreamingservice/files/20f813e2-036a-42a8-92e2-a3a55a0b239b, headers: {Host: cfgb2.baf1.sbs}}}
+  - {name: 🇮🇳 印度01|高速, server: awsin1-tg-data.amazon-azure.com, port: 10313, type: vmess, uuid: bef16390-f84c-4eb1-9ac1-295726b373ee, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, servername: data.amazon-azure.com}
 proxy-groups:
   - name: 🖲️ 节点选择
     type: select
     proxies:
-      - 💟 电信停机
-      - 💘 电信定向
       - ⚖️ 负载均衡-轮询
       - ⚖️ 负载均衡-散列
       - ♻️ 自动选择
@@ -169,35 +118,31 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🌀 手动切换
       - 🎯 全球直连
-      - 🌠 中转原生［只用于chatgpt］
   - name: 🎯 全球直连
     type: select
     proxies:
       - DIRECT
-      - 💟 电信停机
-      - 💘 电信定向
       - ⚖️ 负载均衡-轮询
   - name: 🌀 手动切换
     type: select
     proxies:
-      - 🇸🇬 新加坡03
-      - 🇭🇰 香港02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本01
-      - 🇰🇷 韩国01
+      - 🇯🇵 日本03|专线
+      - 🇯🇵 日本01|专线
+      - 🇰🇷 韩国01|专线
+      - 🇸🇬 新加坡03|专线
+      - 🇭🇰 香港02|专线
       - 🇭🇰 香港01|专线
-      - 🇭🇰 香港|免流
+      - 🇭🇰 香港|免流|01
       - 🇭🇰 香港|免流|02
       - 🇭🇰 香港|免流|03
-      - 🇭🇰 香港临时|中转|x10
       - 🇭🇰 香港02|优化
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡01|专线
+      - 🇸🇬 新加坡2|专线
       - 🇰🇷 韩国02|专线
-      - 🇯🇵 日本02
+      - 🇯🇵 日本02|专线
       - 🇭🇰 香港HKT|200M|02
       - 🇭🇰 香港HKT|200M
-      - 🇭🇰 香港|免流|04
+      - 🇭🇰 香港|免流|临时
       - 🇭🇰 香港01|解锁
       - 🇭🇰 香港02|解锁
       - 🇭🇰 香港03|解锁
@@ -229,6 +174,7 @@ proxy-groups:
       - 🇸🇬 新加坡12|解锁
       - 🇸🇬 新加坡13|解锁
       - 🇸🇬 新加坡14|解锁
+      - 🇯🇵 日本01|高速
       - 🇯🇵 日本02|解锁
       - 🇯🇵 日本03|解锁
       - 🇯🇵 日本04|解锁
@@ -239,6 +185,7 @@ proxy-groups:
       - 🇯🇵 日本09|解锁
       - 🇯🇵 日本10|解锁
       - 🇯🇵 日本11|高速
+      - 🇯🇵 日本12|免流
       - 🇰🇷 韩国01|高速
       - 🇰🇷 韩国02|高速
       - 🇨🇳 台湾01
@@ -251,54 +198,16 @@ proxy-groups:
       - 🇨🇳 台湾08
       - 🇨🇳 台湾09
       - 🇨🇳 台湾10
-      - 🇺🇸 美国02|高速|流媒体|x10
+      - 🇺🇸 美国01|高速
       - 🇦🇺 澳大利亚01|高速
       - 🇬🇧 英国02
-      - 🇸🇬 新加坡中转|x10
-      - 🇭🇰 深港|新加坡|x10
-      - 🇯🇵 日本中转|x10
-      - 🇯🇵 日本中转02|x10
-      - 🇯🇵 日本04|中转|高速x10
-      - 🇯🇵 日本05|中转|高速x10
-      - 🇺🇸 美国03|x10
-      - 🇺🇸 美国06|x10
-      - 🇬🇧 英国01|x10
-      - 🇮🇳 印度02|x10
-      - 🇦🇷 阿根廷01|原生|x10
-      - 🇱🇺 卢森堡01|原生|x10
-      - 乌克兰01|原生|x10
-      - 🇹🇷 土耳其01|原生|x10
-      - 🇹🇷 土耳其02|原生|x10
-      - 🇩🇪 德国01|x10
-      - 🇹🇭 泰国01|x10
-      - 🇹🇭 泰国02|x10
-      - 🇻🇳 越南01|x10
-      - 🇻🇳 越南02|x10
-      - 🇫🇷 法国01|x10
-      - 🇨🇦 加拿大01|x10
-      - 🇫🇮 芬兰|x10
-      - 🇰🇿 哈萨克斯坦01|x10
-      - 🇱🇹 立陶宛01|x10
-      - 🇮🇱 以色列01|x10
-      - 🇭🇺 匈牙利01|x10
-      - 🇲🇽 墨西哥01|x10
-      - 🇪🇸 西班牙01|x10
-      - 🇵🇱 波兰01|x10
-      - 🇸🇪 瑞典01|x10
-      - 🇵🇭 菲律宾01|x10
-      - 🇵🇹 葡萄牙01|x10
-      - 🇷🇴 罗马尼亚01|x10
-      - 🇬🇷 希腊01|x10
-      - 🇦🇹 奥地利01|x10
-      - 🇰🇭 柬埔寨01|x10
-      - 🇵🇰 巴基斯坦01|x10
-      - 🇳🇱 荷兰01
+      - 🇮🇳 印度01|高速
   - name: 🕹 规则之外
     type: select
     proxies:
-      - 🎯 全球直连
       - ⚖️ 负载均衡-轮询
-  - name: 🛑 全球拦截
+      - 🎯 全球直连
+  - name: 🛑 广告拦截
     type: select
     proxies:
       - REJECT
@@ -308,81 +217,26 @@ proxy-groups:
     proxies:
       - REJECT
       - DIRECT
-  - name: 🌠 中转原生［只用于chatgpt］
-    type: select
-    proxies:
-      - 🇺🇸 美国02|高速|流媒体|x10
-      - 🇸🇬 新加坡中转|x10
-      - 🇭🇰 深港|新加坡|x10
-      - 🇯🇵 日本中转|x10
-      - 🇯🇵 日本中转02|x10
-      - 🇯🇵 日本04|中转|高速x10
-      - 🇯🇵 日本05|中转|高速x10
-      - 🇺🇸 美国03|x10
-      - 🇺🇸 美国06|x10
-      - 🇬🇧 英国01|x10
-      - 🇮🇳 印度02|x10
-      - 🇦🇷 阿根廷01|原生|x10
-      - 🇱🇺 卢森堡01|原生|x10
-      - 乌克兰01|原生|x10
-      - 🇹🇷 土耳其01|原生|x10
-      - 🇹🇷 土耳其02|原生|x10
-      - 🇩🇪 德国01|x10
-      - 🇹🇭 泰国01|x10
-      - 🇹🇭 泰国02|x10
-      - 🇻🇳 越南01|x10
-      - 🇻🇳 越南02|x10
-      - 🇫🇷 法国01|x10
-      - 🇨🇦 加拿大01|x10
-      - 🇫🇮 芬兰|x10
-      - 🇰🇿 哈萨克斯坦01|x10
-      - 🇱🇹 立陶宛01|x10
-      - 🇮🇱 以色列01|x10
-      - 🇭🇺 匈牙利01|x10
-      - 🇲🇽 墨西哥01|x10
-      - 🇪🇸 西班牙01|x10
-      - 🇵🇱 波兰01|x10
-      - 🇸🇪 瑞典01|x10
-      - 🇵🇭 菲律宾01|x10
-      - 🇵🇹 葡萄牙01|x10
-      - 🇷🇴 罗马尼亚01|x10
-      - 🇬🇷 希腊01|x10
-      - 🇦🇹 奥地利01|x10
-      - 🇰🇭 柬埔寨01|x10
-      - 🇵🇰 巴基斯坦01|x10
-      - 🇭🇰 香港临时|中转|x10
   - name: ⚖️ 负载均衡-轮询
     type: load-balance
-    url: http://cp.cloudflare.com/
-    interval: 60
+    interval: 300
+    url: http://www.gstatic.com/generate_204
     strategy: round-robin
     proxies:
-      - 🇸🇬 新加坡03
-      - 🇭🇰 香港02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本01
-      - 🇰🇷 韩国01
+      - 🇯🇵 日本03|专线
+      - 🇯🇵 日本01|专线
+      - 🇰🇷 韩国01|专线
+      - 🇸🇬 新加坡03|专线
+      - 🇭🇰 香港02|专线
       - 🇭🇰 香港01|专线
-      - 🇭🇰 香港|免流
+      - 🇭🇰 香港|免流|01
       - 🇭🇰 香港|免流|02
       - 🇭🇰 香港|免流|03
       - 🇭🇰 香港02|优化
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡01|专线
+      - 🇸🇬 新加坡2|专线
       - 🇰🇷 韩国02|专线
-      - 🇯🇵 日本02
-      - 🇭🇰 香港HKT|200M|02
-      - 🇭🇰 香港HKT|200M
-      - 🇭🇰 香港|免流|04
-      - 🇭🇰 香港01|解锁
-      - 🇭🇰 香港02|解锁
-      - 🇭🇰 香港03|解锁
-      - 🇭🇰 香港04|解锁
-      - 🇭🇰 香港05|解锁
-      - 🇭🇰 香港06|解锁
-      - 🇭🇰 香港07|解锁
-      - 🇭🇰 香港08|解锁
-      - 🇭🇰 香港09|解锁
+      - 🇯🇵 日本02|专线
       - 🇭🇰 香港10|解锁
       - 🇭🇰 香港11|解锁
       - 🇭🇰 香港12|解锁
@@ -391,74 +245,42 @@ proxy-groups:
       - 🇭🇰 香港15|高速
       - 🇭🇰 香港16|高速
       - 🇸🇬 新加坡01|解锁
-      - 🇸🇬 新加坡02|解锁
-      - 🇸🇬 新加坡03|解锁
-      - 🇸🇬 新加坡04|解锁
-      - 🇸🇬 新加坡05|解锁
-      - 🇸🇬 新加坡06|解锁
-      - 🇸🇬 新加坡08|高速
-      - 🇸🇬 新加坡07|解锁
-      - 🇸🇬 新加坡08|解锁
       - 🇸🇬 新加坡09|解锁
       - 🇸🇬 新加坡10|解锁
       - 🇸🇬 新加坡11|免流
       - 🇸🇬 新加坡12|解锁
       - 🇸🇬 新加坡13|解锁
       - 🇸🇬 新加坡14|解锁
-      - 🇯🇵 日本02|解锁
-      - 🇯🇵 日本03|解锁
-      - 🇯🇵 日本04|解锁
-      - 🇯🇵 日本05|解锁
-      - 🇯🇵 日本06|解锁
-      - 🇯🇵 日本07|解锁
-      - 🇯🇵 日本08|解锁
       - 🇯🇵 日本09|解锁
       - 🇯🇵 日本10|解锁
       - 🇯🇵 日本11|高速
+      - 🇯🇵 日本12|免流
       - 🇰🇷 韩国01|高速
       - 🇰🇷 韩国02|高速
       - 🇨🇳 台湾01
       - 🇨🇳 台湾02
       - 🇨🇳 台湾03
       - 🇨🇳 台湾04
-      - 🇨🇳 台湾05
-      - 🇨🇳 台湾06
-      - 🇨🇳 台湾07
-      - 🇨🇳 台湾08
-      - 🇨🇳 台湾09
-      - 🇨🇳 台湾10
   - name: ⚖️ 负载均衡-散列
     type: load-balance
-    url: http://cp.cloudflare.com/
-    interval: 60
+    interval: 300
+    url: http://www.gstatic.com/generate_204
     strategy: consistent-hashing
     proxies:
-      - 🇸🇬 新加坡03
-      - 🇭🇰 香港02
-      - 🇯🇵 日本03
-      - 🇯🇵 日本01
-      - 🇰🇷 韩国01
+      - 🇯🇵 日本03|专线
+      - 🇯🇵 日本01|专线
+      - 🇰🇷 韩国01|专线
+      - 🇸🇬 新加坡03|专线
+      - 🇭🇰 香港02|专线
       - 🇭🇰 香港01|专线
-      - 🇭🇰 香港|免流
+      - 🇭🇰 香港|免流|01
       - 🇭🇰 香港|免流|02
       - 🇭🇰 香港|免流|03
       - 🇭🇰 香港02|优化
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡2
+      - 🇸🇬 新加坡01|专线
+      - 🇸🇬 新加坡2|专线
       - 🇰🇷 韩国02|专线
-      - 🇯🇵 日本02
-      - 🇭🇰 香港HKT|200M|02
-      - 🇭🇰 香港HKT|200M
-      - 🇭🇰 香港|免流|04
-      - 🇭🇰 香港01|解锁
-      - 🇭🇰 香港02|解锁
-      - 🇭🇰 香港03|解锁
-      - 🇭🇰 香港04|解锁
-      - 🇭🇰 香港05|解锁
-      - 🇭🇰 香港06|解锁
-      - 🇭🇰 香港07|解锁
-      - 🇭🇰 香港08|解锁
-      - 🇭🇰 香港09|解锁
+      - 🇯🇵 日本02|专线
       - 🇭🇰 香港10|解锁
       - 🇭🇰 香港11|解锁
       - 🇭🇰 香港12|解锁
@@ -467,46 +289,26 @@ proxy-groups:
       - 🇭🇰 香港15|高速
       - 🇭🇰 香港16|高速
       - 🇸🇬 新加坡01|解锁
-      - 🇸🇬 新加坡02|解锁
-      - 🇸🇬 新加坡03|解锁
-      - 🇸🇬 新加坡04|解锁
-      - 🇸🇬 新加坡05|解锁
-      - 🇸🇬 新加坡06|解锁
-      - 🇸🇬 新加坡08|高速
-      - 🇸🇬 新加坡07|解锁
-      - 🇸🇬 新加坡08|解锁
       - 🇸🇬 新加坡09|解锁
       - 🇸🇬 新加坡10|解锁
       - 🇸🇬 新加坡11|免流
       - 🇸🇬 新加坡12|解锁
       - 🇸🇬 新加坡13|解锁
       - 🇸🇬 新加坡14|解锁
-      - 🇯🇵 日本02|解锁
-      - 🇯🇵 日本03|解锁
-      - 🇯🇵 日本04|解锁
-      - 🇯🇵 日本05|解锁
-      - 🇯🇵 日本06|解锁
-      - 🇯🇵 日本07|解锁
-      - 🇯🇵 日本08|解锁
       - 🇯🇵 日本09|解锁
       - 🇯🇵 日本10|解锁
       - 🇯🇵 日本11|高速
+      - 🇯🇵 日本12|免流
       - 🇰🇷 韩国01|高速
       - 🇰🇷 韩国02|高速
       - 🇨🇳 台湾01
       - 🇨🇳 台湾02
       - 🇨🇳 台湾03
       - 🇨🇳 台湾04
-      - 🇨🇳 台湾05
-      - 🇨🇳 台湾06
-      - 🇨🇳 台湾07
-      - 🇨🇳 台湾08
-      - 🇨🇳 台湾09
-      - 🇨🇳 台湾10
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 200
+    interval: 300
     tolerance: 100
     proxies:
       - 🇭🇰 香港节点
@@ -516,13 +318,18 @@ proxy-groups:
   - name: 🇭🇰 香港节点
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 200
+    interval: 300
     tolerance: 100
     proxies:     
-      - 🇭🇰 香港02   
+      - 🇭🇰 香港02|专线
+      - 🇭🇰 香港01|专线
+      - 🇭🇰 香港|免流|01
+      - 🇭🇰 香港|免流|02
+      - 🇭🇰 香港|免流|03
+      - 🇭🇰 香港02|优化
       - 🇭🇰 香港HKT|200M|02
       - 🇭🇰 香港HKT|200M
-      - 🇭🇰 香港|免流|04
+      - 🇭🇰 香港|免流|临时
       - 🇭🇰 香港01|解锁
       - 🇭🇰 香港02|解锁
       - 🇭🇰 香港03|解锁
@@ -539,15 +346,10 @@ proxy-groups:
       - 🇭🇰 香港14|高速
       - 🇭🇰 香港15|高速
       - 🇭🇰 香港16|高速
-      - 🇭🇰 香港01|专线
-      - 🇭🇰 香港|免流
-      - 🇭🇰 香港|免流|02
-      - 🇭🇰 香港|免流|03
-      - 🇭🇰 香港02|优化
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 200
+    interval: 300
     tolerance: 100
     proxies:
       - 🇨🇳 台湾01
@@ -563,10 +365,11 @@ proxy-groups:
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 200
+    interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 新加坡03
+      - 🇸🇬 新加坡01|专线
+      - 🇸🇬 新加坡2|专线
       - 🇸🇬 新加坡01|解锁
       - 🇸🇬 新加坡02|解锁
       - 🇸🇬 新加坡03|解锁
@@ -582,17 +385,17 @@ proxy-groups:
       - 🇸🇬 新加坡12|解锁
       - 🇸🇬 新加坡13|解锁
       - 🇸🇬 新加坡14|解锁
-      - 🇸🇬 新加坡01
-      - 🇸🇬 新加坡2
       - DIRECT
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
-    interval: 200
+    interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本03
-      - 🇯🇵 日本01
+      - 🇯🇵 日本02|专线
+      - 🇯🇵 日本03|专线
+      - 🇯🇵 日本01|专线
+      - 🇯🇵 日本01|高速
       - 🇯🇵 日本02|解锁
       - 🇯🇵 日本03|解锁
       - 🇯🇵 日本04|解锁
@@ -601,33 +404,9 @@ proxy-groups:
       - 🇯🇵 日本07|解锁
       - 🇯🇵 日本08|解锁
       - 🇯🇵 日本09|解锁
-      - 🇯🇵 日本02
       - 🇯🇵 日本10|解锁
       - 🇯🇵 日本11|高速
-  - name: 💟 电信停机
-    type: load-balance
-    url: http://cp.cloudflare.com/
-    interval: 100
-    strategy: consistent-hashing
-    proxies:
-      - 🇨🇳 中国电信停机
-      - 🇭🇰 香港电信停机
-      - 🇭🇰 香港电信停机02
-      - 🇭🇰 香港电信停机03
-      - 🇭🇰 香港电信停机04
-      - 🇸🇬 新加坡电信停机
-  - name: 💘 电信定向
-    type: load-balance
-    url: http://cp.cloudflare.com/
-    interval: 100
-    strategy: consistent-hashing
-    proxies:
-      - 🇨🇳 中国电信星卡   
-      - 🇭🇰 香港电信星卡
-      - 🇭🇰 香港电信星卡02
-      - 🇭🇰 香港电信星卡03
-      - 🇭🇰 香港电信星卡04
-      - 🇸🇬 新加坡电信星卡
+      - 🇯🇵 日本12|免流
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
